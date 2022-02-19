@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    h1{
+        color: red;
+    }
+    #h2{
+        text-align: center;
+    }
+    .test{
+        font-size: 40px;
+        line-height: 100px;
+        /* color: yellow; */
+    }
+    .div{
+        background-color: blue;
+        height: 100px;
+        width: 200px;
+    }
+    .div-children{
+        /* margin: 8px; */
+        /* padding: 8px; */
+        /* position: absolute;
+        top: 200px;
+        left: 50px; */
+        position: relative;
+        top: 30%;
+        left: 60%;
+        border: 10px solid white;
+        background-color: red;
+        width: 50%;
+    }
+</style>
+<script>
+    function clickButton(){
+        document.getElementById("h2").innerHTML = "改变的数据"
+    }
+    console.log('dsandaj')
+</script>
+<body>
+    <!-- <h2 id="h2">abcd</h2>
+    <button onclick="clickButton()">点击我弹窗</button> -->
+    <div class="div">
+        <div class="div-children">子元素</div>
+    </div>
+</body>
+</html>
